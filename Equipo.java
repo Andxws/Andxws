@@ -25,16 +25,18 @@ public class Equipo {
         Equipo.sumaTiempos = sumaTiempos;
     }
     protected void añadirCiclista(){
+        ciclistas.add(ciclista);
         //agregar cada uno de los ciclistas
     }
     protected void listarEquipo(){
+        System.out.println("Nombre del equipo: " + nombreEquipo);
+        System.out.println("País del equipo: " + paisEquipo);
+        System.out.println("Integrantes del equipo: ");
+        for (Ciclista ciclista : ciclistas) {
+            System.out.println(ciclista.getNombre());
+        }
         //Nombre del equipo
         //País del equipo
         //Integrantes del equipo
     }
-
-    
-
-    
-
 }
